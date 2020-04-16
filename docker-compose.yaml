@@ -1,0 +1,37 @@
+version: "3.7"
+services:
+  atomix-1:
+    image: atomix/atomix:3.1.5
+    hostname: atomix-1
+    volumes:
+      - ./atomix-1:/opt/atomix/conf
+  atomix-2:
+    image: atomix/atomix:3.1.5
+    hostname: atomix-2
+    volumes:
+      - ./atomix-2:/opt/atomix/conf
+  atomix-3:
+    image: atomix/atomix:3.1.5
+    hostname: atomix-3
+    volumes:
+      - ./atomix-3:/opt/atomix/conf
+  onos-1:
+    image: onosproject/onos:2.2.2
+    hostname: onos-1
+    ports:
+      - "8181:8181"
+      - "8101:8101"
+    volumes:
+      - ./onos-1:/root/onos/config 
+  onos-2:
+    image: onosproject/onos:2.2.2
+    hostname: onos-2
+    volumes:
+      - ./onos-2:/root/onos/config 
+  onos-3:
+    image: onosproject/onos:2.2.2
+    hostname: onos-3
+    volumes:
+      - ./onos-3:/root/onos/config 
+ 
+      

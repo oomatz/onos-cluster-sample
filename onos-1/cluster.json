@@ -1,0 +1,25 @@
+{
+    "node": {
+        "host": "onos-1", 
+        "id": "onos-1", 
+        "port": 9876
+    }, 
+    "storage": [
+        {
+            "host": "atomix-1", 
+            "id": "atomix-1", 
+            "port": 5679
+        }, 
+        {
+            "host": "atomix-2", 
+            "id": "atomix-2", 
+            "port": 5679
+        }, 
+        {
+            "host": "atomix-3", 
+            "id": "atomix-3", 
+            "port": 5679
+        }
+    ], 
+    "name": "onos"
+}
